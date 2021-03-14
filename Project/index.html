@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/main.js" type="module"></script>
+</head>
+
+<body>
+    <div class="wrapper">
+
+        <header class="header">
+            <nav class="header-nav">
+                <button id="date">Дата</button>
+                <button id="time">Таймер</button>
+            </nav>
+        </header>
+
+        <div class="colendar-calc show">
+            <form id="datecalc" class="datecalc">
+                <label>
+                    <span class="datecalc-title"><strong>Первая дата :</strong></span>
+                    <input class="datecalc-input" type="date" name="firstDate">
+                </label>
+                <label>
+                    <span class="datecalc-title"><strong>Вторая дата :</strong></span>
+                    <input class="datecalc-input" type="date" name="secondDate">
+                </label>
+                <button class="datecalc-btn" type="submit">Расчитать</button>
+                <span class="datecalc-res" id="datecalc__res"></span>
+
+            </form>
+        </div>
+        <div class="timer show">
+
+            <div id="errorMessage" class="error" role="error"></div>
+            <button type="button" class="timer-btn" id="refresh">Сброс</button>
+            <h2 id="timerClock" class="timer-clock">00:00</h2>
+            <div id="inputArea">
+                <input type="text" id="minutes" class="timer-input" placeholder="Ввести только МИНУТЫ!"><br>
+                <button type="button" id="breakBtn" class="timer-btn"></span> Старт</button>
+            </div>
+            <div id="pauseArea">
+                <button type="button" id="pauseBtn" class="timer-btn">Пауза</button>
+            </div>
+            <div id="resumeArea">
+                <button type="button" id="resumeBtn" class="timer-btn">Продолжить</button>
+            </div>
+
+        </div>
+
+    </div>
+</body>
+
+</html>
