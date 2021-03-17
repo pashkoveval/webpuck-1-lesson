@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="wrapper">
+
+        <header class="header">
+            <nav class="header-nav">
+                <button id="date">Дата</button>
+                <img class="img" src="img/1.png" alt="">
+                <button id="time">Таймер</button>
+            </nav>
+        </header>
+
+        <div class="colendar-calc show">
+            <form id="datecalc" class="datecalc">
+                <label>
+                    <span class="datecalc-title"><strong>Первая дата :</strong></span>
+                    <input class="datecalc-input" type="date" name="firstDate">
+                </label>
+                <label>
+                    <span class="datecalc-title"><strong>Вторая дата :</strong></span>
+                    <input class="datecalc-input" type="date" name="secondDate">
+                </label>
+                <button class="datecalc-btn" type="submit">Расчитать</button>
+                <span class="datecalc-res" id="datecalc__res"></span>
+            </form>
+        </div>
+        <div class="timer show">
+            <div class="error"></div>
+
+            <p id="timerClock" class="timer-clock">00:00:00</p>
+            <div class="inputs">
+                <input type="number" id="h" class="timer-input" placeholder="Часы">
+                <input type="number" id="m" class="timer-input" placeholder="Минуты">
+                <input type="number" id="s" class="timer-input" placeholder="Секунды">
+            </div>
+            <button class="startt timer-btn">Старт</button>
+            <button class="stop timer-btn">Стоп</button>
+
+
+        </div>
+
+    </div>
+
+</body>
+
+</html>
